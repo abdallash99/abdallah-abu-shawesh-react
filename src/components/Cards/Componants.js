@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import colors from '../../color'
+import colors from "../../color";
+
 export const CardsWarrper = styled.div`
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -21,7 +22,9 @@ export const Tab = styled.li`
   padding: 0.5rem 1rem;
   color: ${(props) => (!props.active ? colors.lightGray : colors.primary)};
   border-bottom: ${(props) =>
-    !props.active ? "2px solid transparent" : `2px solid ${colors.primary}!important;`};
+    !props.active
+      ? "2px solid transparent"
+      : `2px solid ${colors.primary}!important;`};
   cursor: ${(props) => (props.active ? "auto" : "pointer")}; ;
 `;
 
